@@ -11,6 +11,7 @@ Poo::Poo()
 	pos.y = fenY(rand);
 	v.x = fenvX(rand);
 	v.y = fenvY(rand);
+	pnum++;
 }
 void Poo::huizhi_Poo(Graphics& gfx)const
 {
@@ -253,14 +254,16 @@ void Poo::yidong_Poo()
 	pos += v;
 }
 void Poo::pooxiaoshi(wanjia& a)
-{	
+{		
+		
 		if (a.getpos().x > pos.x - 5 &&
 			a.getpos().x < pos.x + poofen.x + 5 &&
 			a.getpos().y > pos.y - 5 &&
 			a.getpos().y < pos.y + poofen.y + 5)
 		{
 			pengzhuang = 1;
-			chiwo = a.getid();//  玩家ID 0 1   这个chiwo属于 1或者0    
+			chiwo = a.getid();//  玩家ID 0 1  这个chiwo属于 1或者0
+			pnum --;//碰到了之后  总数量 减  1 
 		}
 }
 void Poo::fandanp()

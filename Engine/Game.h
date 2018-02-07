@@ -28409,7 +28409,7 @@ private:
 	Vec2 b = { 799,599};
 	wanjia a;//
 	wanjia c;//
-	static constexpr int numP = 100;
+	static constexpr int numP = 10;
 	Poo p[numP];
 	static constexpr  Vec2 kaishi = { 150,175 };
 	static constexpr  Vec2 jieshu = { 84,64 };

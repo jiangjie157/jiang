@@ -68,6 +68,12 @@ void Game::UpdateModel()
 
 void Game::ComposeFrame()
 {	
+	if (p[0].getpnum() == 0)
+		youxijieshu = 1;
+
+	if (youxijieshu)
+		wanjie(Graphics::zhongxin.x - jieshu.x*0.5, Graphics::zhongxin.y - jieshu.y*0.5);
+
 	if (!youxikaishi)//游戏没开始
 		fengmian(Graphics::zhongxin.x - kaishi.x*0.5, Graphics::zhongxin.y - kaishi.y*0.5);
 	else//如果游戏开始了就 绘制P 和AC 玩家积分和玩家
@@ -84,18 +90,14 @@ void Game::ComposeFrame()
 		c.huizhiB(gfx);//绘制
 	}
 
-	/*游戏结束*/
+	/*游戏结束
 	bool allp = 1;
 
 	for (int i=0; i< numP; i++)//这个 进行youxijieshu这个值得判断 
 		{	
 			allp = allp && p[i].getpengzhuang();//两者都为真 才为真 这个ALLP 是1  然后检测吃到没有如果吃到合并就为真 不然为假
 			youxijieshu = allp;
-		}
-	if (youxijieshu)
-		wanjie(Graphics::zhongxin.x - jieshu.x*0.5, Graphics::zhongxin.y - jieshu.y*0.5);
-
+		}*/
 	
-	
-}//546465sdsass
+}
 	

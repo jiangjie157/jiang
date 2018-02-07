@@ -21,6 +21,7 @@
 #include "MainWindow.h"
 #include "Game.h"
 #include "ChiliException.h"
+int Poo::pnum = 0;
 
 int WINAPI wWinMain( HINSTANCE hInst,HINSTANCE,LPWSTR pArgs,INT )
 {
