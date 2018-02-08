@@ -48,6 +48,7 @@ void Game::UpdateModel()
 	a.jianqie();//限制  最大值最小值 玩家的 
 	c.yidongB(wnd.kbd);//移动
 	c.jianqie();//限制  最大值最小值 玩家的 
+	f.faguang();//小方块发光
 	for (int i = 0; i < numP; i++)//进行下面的的循环以达到积分反弹POO的移动等等
 	{	
 		if (!p[i].getpengzhuang())//如果不被碰撞则进行下列
@@ -68,6 +69,7 @@ void Game::UpdateModel()
 
 void Game::ComposeFrame()
 {	
+	
 	if (p[0].getpnum() == 0)
 		youxijieshu = 1;
 
@@ -83,7 +85,7 @@ void Game::ComposeFrame()
 			if (!p[i].getpengzhuang())
 				p[i].huizhi_Poo(gfx);
 		}
-
+		f.huizhi_F(gfx);
 		a.wanjiaAfenshu(gfx);//积分条
 		c.wanjiaBfenshu(gfx);
 		a.huizhiA(gfx);//绘制玩家的脸

@@ -35,6 +35,7 @@
 #include "vec2.h"
 #include "Wanjia.h"
 #include "Poo.h"
+#include "Xiaofang.h"
 
 class Game
 {
@@ -28409,9 +28410,10 @@ private:
 	Vec2 b = { 799,599};
 	wanjia a;//
 	wanjia c;//
+	xfk f;
 	static constexpr int numP = 10;
 	Poo p[numP];
-	static constexpr  Vec2 kaishi = { 150,175 };
+	static constexpr  Vec2 kaishi = { 150,175};
 	static constexpr  Vec2 jieshu = { 84,64 };
 	/********************************/
 };

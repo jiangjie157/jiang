@@ -149,6 +149,7 @@
     <ClInclude Include="Resource.h" />
     <ClInclude Include="vec2.h" />
     <ClInclude Include="Wanjia.h" />
+    <ClInclude Include="Xiaofang.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DXErr.cpp" />
@@ -161,6 +162,7 @@
     <ClCompile Include="Poo.cpp" />
     <ClCompile Include="vec2.cpp" />
     <ClCompile Include="Wanjia.cpp" />
+    <ClCompile Include="Xiaofang.cpp" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="FramebufferPS.hlsl">
